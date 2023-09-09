@@ -1,0 +1,4 @@
+{
+    "dbUrl": "mongodb://localhost/expensedb",
+    "port": 9000
+}
