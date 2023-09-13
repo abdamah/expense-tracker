@@ -24,7 +24,7 @@ const ExpenseList = ({ expenses, onDelete }: Props) => {
         {expenses.map((expense) => (
           <tr key={expense._id}>
             <td>{expense.description}</td>
-            <td>{expense.amount}</td>
+            <td>${expense.amount}</td>
             <td>{expense.category.name}</td>
             <td>
               <Link
@@ -44,6 +44,17 @@ const ExpenseList = ({ expenses, onDelete }: Props) => {
             </td>
           </tr>
         ))}
+      </tbody>
+      <tbody>
+        <tr>
+          <td className="fw-bold">Total</td>
+          <td className="fw-bold">
+            ${expenses.reduce((acc, expense) => expense.amount + acc, 0)}
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
       </tbody>
     </table>
   );

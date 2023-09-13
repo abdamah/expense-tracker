@@ -1,5 +1,4 @@
-export default interface Expense {
-    _id: string;
+export default interface Expense {  
     description: string;
     amount: number;
     category: string

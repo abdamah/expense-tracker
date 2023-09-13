@@ -4,7 +4,7 @@ import Button from "./common/Button";
 import { Input } from "./common/Input";
 import { Select } from "./common/Select";
 
-export const ExpenseForm = () => {
+const ExpenseForm = () => {
   const { id, expense, handleInputChange, handleSelectChange, handleSubmit } =
     useExpenseForm();
   const { categories } = useCategory();
@@ -36,3 +36,5 @@ export const ExpenseForm = () => {
     </form>
   );
 };
+
+export default ExpenseForm;

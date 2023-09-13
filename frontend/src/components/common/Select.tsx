@@ -23,7 +23,13 @@ export const Select = ({
       <label htmlFor={name} className="form-label">
         {name}
       </label>
-      <select onChange={onChange} {...rest} name={name} className="form-select">
+      <select
+        onChange={onChange}
+        {...rest}
+        id={name}
+        name={name}
+        className="form-select"
+      >
         <option value="">All Categories</option>
         {categories.map((category) => (
           <option key={category._id} value={category._id}>

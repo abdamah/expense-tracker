@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 
 import "./App.css";
-import { ExpenseForm } from "./components/ExpenseForm";
-import { Expenses } from "./components/Expenses";
+import ExpenseForm from "./components/ExpenseForm";
+import Expenses from "./components/Expenses";
 import Navbar from "./components/Navbar";
 
 function App() {

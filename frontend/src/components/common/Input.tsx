@@ -5,10 +5,17 @@ interface Props {
   label: string;
   type?: "text" | "number";
   value: string | number;
+
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
-export const Input = ({ name, label, type = "text", ...rest }: Props) => {
+export const Input = ({
+  name,
+  label,
+  type = "text",
+
+  ...rest
+}: Props) => {
   return (
     <div className="mb-3">
       <label htmlFor={name} className="form-label">

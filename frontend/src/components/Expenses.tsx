@@ -3,7 +3,7 @@ import useExpense from "../hooks/useExpense";
 import ExpenseFilter from "./ExpenseFilter";
 import ExpenseList from "./ExpenseList";
 
-export const Expenses = () => {
+const Expenses = () => {
   const { visibleExpenses, setSelectCategory, handleDelete } = useExpense();
   const { categories } = useCategory();
 
@@ -19,3 +19,5 @@ export const Expenses = () => {
     </>
   );
 };
+
+export default Expenses;
